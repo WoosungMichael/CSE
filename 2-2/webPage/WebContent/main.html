@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>밥한술 홈페이지</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<br>
+	
+	<script language="JavaScript">
+		window.open("popup.jsp", "popup", "width=650, height=280");
+	</script>
+	
+	<div id="top">
+		<a href="main.html"> <img src="image/logo1.png" width="150" height="150" alt="밥한술" title="밥한술"></a>
+		<iframe src="login_menu.jsp" style="width: 250px; height: 35px; border: 0" scrolling="no"></iframe>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" class="button_upper" onclick="location.href='find_id.jsp'">ID 찾기</button>
+		<button type="button" class="button_upper" onclick="location.href='join.jsp'">회원가입</button>
+		<button type="button" class="button_upper" onclick="location.href='deleteID.jsp'">탈퇴</button>
+		<button type="button" class="button_upper" onclick="location.href='main.html'">HOME</button>
+	</div>
+
+	<div class="menubar">
+		<center>
+			<ul>
+				<li><a href="main.html">밥한술 소개</a></li>
+				<li><a href="reservation.jsp">밥한술 예약하기</a>
+					<ul>
+						<li><a href="reservation.jsp">좌석예약</a></li>
+						<li><a href="reserve_check.jsp">예약 현황/취소</a></li>
+					</ul></li>
+				<li><a href="board.jsp">커뮤니티</a>
+					<ul>
+						<li><a href="board.jsp">자유 게시판</a></li>
+						<li><a href="question.jsp">자주묻는질문</a></li>
+					</ul></li>
+				<li><a href="map.html">오시는 길 안내</a></li>
+			</ul>
+			&nbsp;
+			<img class="menuSlides" src="image/main1.jpg" align="middle"
+				width="500" height="300"> <img class="menuSlides"
+				src="image/main2.jpg" align="middle" width="600" height="300">
+			<img class="menuSlides" src="image/main3.jpg" align="middle"
+				width="500" height="300"> <img class="menuSlides"
+				src="image/main4.jpg" align="middle" width="500" height="300">
+			<img class="menuSlides" src="image/main5.jpg" align="middle"
+				width="500" height="300"> <img class="menuSlides"
+				src="image/main6.jpg" align="middle" width="500" height="300">
+			<img class="menuSlides" src="image/main7.jpg" align="middle"
+				width="500" height="300">
+			<script language="JavaScript">
+				var index = 0;
+				slide();
+
+				function slide() {
+					var i;
+					var x = document.getElementsByClassName("menuSlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					index++;
+					if (index > x.length) {
+						index = 1
+					}
+					x[index - 1].style.display = "block";
+					setTimeout(slide, 2000); // Change image every 2 seconds
+				}
+			</script>
+			<br>
+		</center>
+	</div>
+
+	<div id="body1">
+
+		<center>
+			<br>
+			<br>
+			<div>
+				<br> <font size="5">밥한술 메뉴</font><br> <img
+					src="image/menu1.png" width="800" height="550" /> <br>
+			</div>
+			<br>
+			<br>
+
+			<div>
+				<font size="5">밥한술 소개</font> <br>
+				<br>
+				<table border="2" cellspacing="2">
+					<tr>
+						<td colspan="2"><br>&nbsp;&nbsp;충무로역 1번 출구, 대한극장 근처에 위치한
+							동국대학교 학생들의 인기 술집&nbsp;&nbsp;<br>
+						<br></td>
+					</tr>
+					<tr>
+						<td><br>&nbsp;주&nbsp;&nbsp;&nbsp;소 : 서울 중구 퇴계로42길 14&nbsp;<br>
+						<br>&nbsp;전화번호 : 02-2268-0263&nbsp;<br>
+						<br></td>
+						<td><br>&nbsp;영업시간 : 18:00 ~ 02:00&nbsp;<br>
+						<br>&nbsp;휴 무 일 : 일요일&nbsp;<br>
+						<br></td>
+					</tr>
+
+				</table>
+			</div>
+			<br>
+			<br>
+		</center>
+		<br>
+		<br>
+	</div>
+
+	<div id="underbar">
+		<img id="logo_white" src="image/end.PNG" width="175" height="110"><font
+			color="white" size="2.8"><br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;밥한술 : 서울 중구 퇴계로42길 14<br>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;전화번호 : 02-2268-0263</font>
+	</div>
+</body>
+</html>

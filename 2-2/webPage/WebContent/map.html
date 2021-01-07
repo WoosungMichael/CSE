@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>오시는 길/지도</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+#my_img {
+	float: left;
+	margin-right: 20px;
+	margin-top: 20px;
+	clear: both;
+}
+</style>
+</head>
+<body>
+	<br>
+	<div id="top">
+		<a href="main.html"> <img src="image/logo1.png" width="150" height="150" alt="밥한술" title="밥한술"></a>
+		<iframe src="login_menu.jsp" style="width: 250px; height: 35px; border: 0" scrolling="no"></iframe>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="button" class="button_upper" onclick="location.href='find_id.jsp'">ID 찾기</button>
+		<button type="button" class="button_upper" onclick="location.href='join.jsp'">회원가입</button>
+		<button type="button" class="button_upper" onclick="location.href='deleteID.jsp'">탈퇴</button>
+		<button type="button" class="button_upper" onclick="location.href='main.html'">HOME</button>
+	</div>
+
+	<div class="menubar">
+		<center>
+			<ul>
+				<li><a href="main.html">밥한술 소개</a></li>
+				<li><a href="reservation.jsp">밥한술 예약하기</a>
+					<ul>
+						<li><a href="reservation.jsp">좌석예약</a></li>
+						<li><a href="reserve_check.jsp">예약 현황/취소</a></li>
+					</ul></li>
+				<li><a href="board.jsp">커뮤니티</a>
+					<ul>
+						<li><a href="board.jsp">자유 게시판</a></li>
+						<li><a href="question.jsp">자주묻는질문</a></li>
+					</ul></li>
+				<li><a href="map.html">오시는 길 안내</a></li>
+			</ul>
+			<br>
+		</center>
+	</div>
+
+	<br><br>
+
+	<center>
+		<img src="image/map1.PNG" width="100" height="100"> <br> <font
+			size="5"><br>오시는 길 / 지도<br> <br></font> <br> <img
+			src="image/map.PNG" class="my_img" width="580" height="400">
+	</center>
+	<br><br>
+	<center>
+	<div
+		style="position: relative; padding: 10px; width: 720px; border: 1px dotted #777777">
+	
+		<font size="3"><b>밥한술 주소</b></font><br> 
+		<font size="2">서울 중구 퇴계로42길 14</font><br> 
+		<hr width="710px" color=#adadad>
+		<font size="3"><b>밥한술 전화번호</b></font><br>
+		<font size="2">02-2268-0263</font><br>
+	
+	</div>
+	</center>
+	<br><br>
+	<br><br>
+	<br><br>
+	<div id="underbar">
+		<img id="logo_white" src="image/end.PNG" width="175" height="110"><font
+			color="white" size="2.5"><br> <br>&nbsp;&nbsp;&nbsp;&nbsp;충무로
+			밥한술 : 서울 중구 퇴계로42길 14<br> <br>&nbsp;&nbsp;&nbsp;&nbsp;전화번호
+			: 02-2268-0263</font>
+	</div>
+
+</body>
+</html>
